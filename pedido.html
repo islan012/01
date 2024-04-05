@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação de Pedido</title>
+  <!-- Adicione os links para os estilos do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="text-center mb-4">Confirmação de Pedido</h2>
+
+        <form>
+          <!-- Detalhes do Pedido -->
+          <div class="form-group">
+            <label for="produto">Produto:</label>
+            <input type="text" class="form-control" id="produto" readonly value="Nome do Produto">
+          </div>
+
+          <div class="form-group">
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="form-control" id="quantidade" readonly value="1">
+          </div>
+
+          <!-- Informações do Cliente -->
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+          </div>
+
+          <!-- Botão de Confirmação -->
+          <button type="button" class="btn btn-primary btn-block">Confirmar Pedido</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adicione o script do Bootstrap (jQuery e Popper.js são necessários) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
